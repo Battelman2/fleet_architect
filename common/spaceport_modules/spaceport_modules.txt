@@ -1,0 +1,26 @@
+fleet_logistics_office = {
+	icon = "GFX_spaceport_module_destroyer_assembly_yard"
+	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
+	construction_days = 180
+	prerequisites = { "tech_fleet_logistics" }
+	spaceport_level = 2
+	
+	cost = {
+		minerals = 300
+	}
+	
+	required_resources = {
+		energy = 4
+	}
+	
+	modifier = {
+		spaceport_ship_build_time_mult = -0.25
+	}	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			from = { sector_controlled = yes }
+		}
+	}
+}
